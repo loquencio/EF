@@ -1,0 +1,10 @@
+C:\Projetos\K19\EF\EF\bin\Debug\EF.exe.config
+C:\Projetos\K19\EF\EF\bin\Debug\EF.exe
+C:\Projetos\K19\EF\EF\bin\Debug\EF.pdb
+C:\Projetos\K19\EF\EF\bin\Debug\EntityFramework.dll
+C:\Projetos\K19\EF\EF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projetos\K19\EF\EF\bin\Debug\EntityFramework.xml
+C:\Projetos\K19\EF\EF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projetos\K19\EF\EF\obj\Debug\EF.csprojResolveAssemblyReference.cache
+C:\Projetos\K19\EF\EF\obj\Debug\EF.exe
+C:\Projetos\K19\EF\EF\obj\Debug\EF.pdb
