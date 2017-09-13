@@ -10,15 +10,23 @@ namespace EF
     {
         static void Main(string[] args)
         {
-            using (EFContext cntx = new EFContext())
+            try { 
+                using (EFContext cntx = new EFContext())
+                {
+                    Editora e = new Editora();
+                    e.Nome = "K19";
+                    e.Email = "contato@k19.com";
+
+                    cntx.Editoras.Add(e);
+
+                    cntx.SaveChanges();
+
+                    Console.WriteLine("Deu tudo certo porra");
+                }
+            } catch (SystemException e)
             {
-                Editora e = new Editora();
-                e.Nome = "K19";
-                e.Email = "contato@k19.com";
-
-                cntx.Editoras.Add(e);
-
-                cntx.SaveChanges();
+                Console.WriteLine(e.Message);
+                Console.ReadKey();
             }
         }
     }

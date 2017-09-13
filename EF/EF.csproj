@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>EF.Teste</StartupObject>
+    <StartupObject>EF.RemoveEditoraComEF</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -55,10 +55,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlteraEditoraComEF.cs" />
     <Compile Include="Editora.cs" />
     <Compile Include="EFContext.cs" />
+    <Compile Include="InsereEditoraComEF.cs" />
+    <Compile Include="ListarEditorasComEF.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveEditoraComEF.cs" />
     <Compile Include="Teste.cs" />
   </ItemGroup>
   <ItemGroup>
