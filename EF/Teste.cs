@@ -13,15 +13,15 @@ namespace EF
             try { 
                 using (EFContext cntx = new EFContext())
                 {
-                    Editora e = new Editora();
-                    e.Nome = "K19";
-                    e.Email = "contato@k19.com";
-
-                    cntx.Editoras.Add(e);
-
-                    cntx.SaveChanges();
-
-                    Console.WriteLine("Deu tudo certo porra");
+                    var res = cntx.Autores;
+                    
+                    foreach (Autor autor in res) { 
+                        Console.WriteLine("{0} - {1}: ", autor.Id, autor.Nome);
+                        var livros =  cntx.Livros.Where(x => x.Autores.Contains(autor));
+                        foreach (Livro livro in livros) 
+                            Console.WriteLine("\t{0}", livro.Nome);
+                    }
+                    Console.ReadKey();
                 }
             } catch (SystemException e)
             {

@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>EF.AdicionaLivroEAutor</StartupObject>
+    <StartupObject>EF.Consultas</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -58,26 +58,31 @@
     <Compile Include="AdicionaDepartamentoFuncionario.cs" />
     <Compile Include="AdicionaLivroEAutor.cs" />
     <Compile Include="AdicionaPedidoConsumidor.cs" />
+    <Compile Include="AdicionaRevistas.cs" />
     <Compile Include="AlteraEditoraComEF.cs" />
     <Compile Include="Autor.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="Consultas.cs" />
     <Compile Include="Consumidor.cs" />
     <Compile Include="Departamento.cs" />
     <Compile Include="Editora.cs" />
     <Compile Include="EFContext.cs" />
     <Compile Include="Endereco.cs" />
     <Compile Include="Estado.cs" />
+    <Compile Include="Fatura.cs" />
     <Compile Include="Funcionario.cs" />
     <Compile Include="Governador.cs" />
     <Compile Include="InsereClienteEF.cs" />
     <Compile Include="InsereEditoraComEF.cs" />
     <Compile Include="InsereEstadoEGovernador.cs" />
+    <Compile Include="Ligacao.cs" />
     <Compile Include="ListarEditorasComEF.cs" />
     <Compile Include="Livro.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveEditoraComEF.cs" />
+    <Compile Include="Revista.cs" />
     <Compile Include="Teste.cs" />
   </ItemGroup>
   <ItemGroup>

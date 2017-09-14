@@ -22,6 +22,7 @@ namespace EF
         public DbSet<Autor> Autores { get; set; }
         public DbSet<Ligacao> Ligacoes { get; set; }
         public DbSet<Fatura> Faturas { get; set; }
+        public DbSet<Revista> Revistas { get; set; }
 
         public EFContext()
         {
