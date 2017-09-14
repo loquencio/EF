@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>EF.AdicionaPedidoConsumidor</StartupObject>
+    <StartupObject>EF.AdicionaLivroEAutor</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -56,8 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdicionaDepartamentoFuncionario.cs" />
+    <Compile Include="AdicionaLivroEAutor.cs" />
     <Compile Include="AdicionaPedidoConsumidor.cs" />
     <Compile Include="AlteraEditoraComEF.cs" />
+    <Compile Include="Autor.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Consumidor.cs" />
     <Compile Include="Departamento.cs" />
@@ -71,6 +73,7 @@
     <Compile Include="InsereEditoraComEF.cs" />
     <Compile Include="InsereEstadoEGovernador.cs" />
     <Compile Include="ListarEditorasComEF.cs" />
+    <Compile Include="Livro.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
