@@ -16,8 +16,20 @@ namespace EF
 
                 Console.WriteLine("A soma dos preços das revistas é igual a {0}. \n", ctx.Revistas.Sum(x => x.Preco));
 
-                Console.WriteLine("O maior preço de revista é " + ctx.Revistas.Max(x => x.Preco));
+                Console.WriteLine("O maior preço de revista é " + ctx.Revistas.Max(x => x.Preco) + "\n");
 
+                Console.WriteLine("O preço médio das revistas é " + ctx.Revistas.Average(x => x.Preco) + "\n");
+
+                Console.WriteLine("Todas as revistas:");
+
+                var revistas = ctx.Revistas;
+
+                foreach(Revista r in revistas)
+                {
+                    Console.WriteLine("Id: " + r.Id);
+                    Console.WriteLine("Nome: " + r.Nome);
+                    Console.WriteLine("Preço: " + r.Preco + "\n");
+                } 
                 Console.ReadKey();
             }
         }
